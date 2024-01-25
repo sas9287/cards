@@ -16,7 +16,7 @@ const bot = new Telegraf("6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE");
 // const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.start((ctx) => {
-  const gameUrl = "http://localhost:5500/root/match.html"; // Замените на URL вашей игры
+  const gameUrl = "https://unique-paletas-c0b3b1.netlify.app"; // Замените на URL вашей игры
   const gameButton = Markup.button.url("Играть", gameUrl);
 
   ctx.reply(
