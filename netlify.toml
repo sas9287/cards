@@ -7,10 +7,10 @@
 [build.environment]
   TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
 
-[[redirects]] # Настройка перенаправления, если нужно
-  from = "/*"
-  to = "/root/:splat"
-  status = 200
+# [[redirects]] # Настройка перенаправления, если нужно
+#   from = "/*"
+#   to = "/root/:splat"
+#   status = 200
 
 [context.production.environment]
   NODE_ENV = "production" # Устанавливаем NODE_ENV в production для окружения production
