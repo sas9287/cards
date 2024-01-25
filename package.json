@@ -12,7 +12,7 @@
   "main": "root/match.html",
   "scripts": {
     "start": "node server.js",
-    "build": "npm run build"
+    "build": "npm run start"
   },
   "author": "IchGames",
   "license": "ISC",
