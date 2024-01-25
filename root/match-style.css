@@ -1,0 +1,124 @@
+head, body {
+    margin: 0;
+    background-color: beige;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.match-info {
+    width: 100%;
+    height: 10%;
+    background-color: lightgrey;
+}
+
+.board-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 20px);
+    height: calc(80% - 20px);
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+
+.match-buttons {
+    width: 100%;
+    height: 10%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-turn {
+    height: 80%;
+    width: 20%;
+    background-color: rgb(102, 181, 220);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    transition: .15s ease;
+    cursor: pointer;
+}
+
+.button-turn::before {
+    content: 'Завершить ход';
+}
+
+.button-turn::before {
+animation: blink 1s infinite alternate;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+/* animation-delay: 1000s; */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.button-turn:hover::before {
+    animation: none;
+}
+
+.button-turn:active {
+    transform: scale(0.95);
+}
+
+.card {
+    width: calc(25% - 40px);
+    height: calc(25% - 20px);
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    transition: .15s ease;
+    cursor: pointer;
+}
+
+.card.redCard {
+    background-color: rgb(237, 100, 100);
+}
+
+.card.blueCard {
+    background-color: cornflowerblue;
+}
+
+.card.greenCard {
+    background-color: rgb(100, 237, 118);
+}
+
+.card.orangeCard {
+    background-color: rgb(237, 196, 100);
+}
+
+.card.hidden {
+    background-color: rgb(180, 180, 180);
+}
+
+.card.picked {
+    background-color: rgb(230, 237, 100);
+    transform: scale(0.95);
+}
