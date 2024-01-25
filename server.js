@@ -12,8 +12,7 @@ app.listen(port, () => {
 
 require("dotenv").config();
 const { Telegraf, Markup } = require("telegraf");
-const bot = new Telegraf("6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE");
-// const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.start((ctx) => {
   const gameUrl = "https://unique-paletas-c0b3b1.netlify.app"; // Замените на URL вашей игры
