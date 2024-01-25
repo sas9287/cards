@@ -10,7 +10,7 @@
 
 [[redirects]] # Настройка перенаправления, если нужно
   from = "/*"
-  to = "root/match.html"
+  to = "match.html"
   # to = "/root/:splat"
   status = 200
 
