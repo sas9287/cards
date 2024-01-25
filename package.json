@@ -9,7 +9,7 @@
   },
   "name": "cards",
   "version": "1.0.0",
-  "main": "root/match.html",
+  "main": "match.html",
   "scripts": {
     "start": "node server.js",
     "build": "npm run start"
