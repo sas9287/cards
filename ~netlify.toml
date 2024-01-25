@@ -10,7 +10,8 @@
 
 [[redirects]] # Настройка перенаправления, если нужно
   from = "/*"
-  to = "/root/:splat"
+  to = "/match.html"
+  # to = "/root/:splat"
   status = 200
 
 # [context.production.environment]
