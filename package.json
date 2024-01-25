@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "createjs": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "easeljs": "^1.0.2",
+    "express": "^4.18.2",
+    "telegraf": "^4.15.3",
+    "tweenjs": "^1.0.2"
+  },
+  "name": "cards",
+  "version": "1.0.0",
+  "main": "match.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IchGames",
+  "license": "ISC",
+  "description": ""
+}
