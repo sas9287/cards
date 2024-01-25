@@ -1,9 +1,9 @@
 [build]
-  base = "root" # Указываем базовую директорию для сборки
-  publish = "dist"
+  # base = "root" # Указываем базовую директорию для сборки
+  publish = "root"
 
 #   # Настроим команды сборки (если они нужны)
-  command = "node run build" # Замените на вашу команду сборки, если необходимо
+  command = "npm run build" # Замените на вашу команду сборки, если необходимо
 
 [build.environment]
   TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
