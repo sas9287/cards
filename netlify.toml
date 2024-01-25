@@ -2,7 +2,7 @@
   base = "root" # Указываем базовую директорию для сборки
 
   # Настроим команды сборки (если они нужны)
-  command = "node match.html" # Замените на вашу команду сборки, если необходимо
+  command = "node server.js" # Замените на вашу команду сборки, если необходимо
 
 [build.environment]
   TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
