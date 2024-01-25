@@ -1,14 +1,14 @@
-const express = require("express");
-const app = express();
-const port = 5500;
+// const express = require("express");
+// const app = express();
+// const port = 5500;
 
-// Определите статическую папку для вашего проекта (где хранятся статические файлы, такие как HTML, CSS, и JavaScript)
-app.use(express.static("root"));
+// // Определите статическую папку для вашего проекта (где хранятся статические файлы, такие как HTML, CSS, и JavaScript)
+// app.use(express.static("root"));
 
-// Запустите сервер
-app.listen(port, () => {
-  console.log(`Сервер запущен на порту ${port}`);
-});
+// // Запустите сервер
+// app.listen(port, () => {
+//   console.log(`Сервер запущен на порту ${port}`);
+// });
 
 require("dotenv").config();
 const { Telegraf, Markup } = require("telegraf");
