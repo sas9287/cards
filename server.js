@@ -10,8 +10,8 @@
 //   console.log(`Сервер запущен на порту ${port}`);
 // });
 
-require("dotenv").config();
-const { Telegraf, Markup } = require("telegraf");
+require("node_modules/dotenv").config();
+const { Telegraf, Markup } = require("node_modules/telegraf");
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.start((ctx) => {
