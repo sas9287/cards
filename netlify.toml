@@ -1,12 +1,21 @@
 [build]
-  command = "npm run build" # или команда, которую вы используете для сборки проекта
+  base = "Карточки/root" # Указываем базовую директорию для сборки
 
-[[redirects]]
+  # Настроим команды сборки (если они нужны)
+  command = "npm run build" # Замените на вашу команду сборки, если необходимо
+
+[build.environment]
+  TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
+
+[[redirects]] # Настройка перенаправления, если нужно
   from = "/*"
-  to = "/root/:splat" # это указывает, что все запросы перенаправляются на файлы в папке "root"
+  to = "/root/:splat"
   status = 200
 
-[[headers]]
-  for = "/root/*" # указываем, что это для файлов в папке "root"
-    [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate" # настройки кэширования
+[context.production.environment]
+  NODE_ENV = "production" # Устанавливаем NODE_ENV в production для окружения production
+
+[context.split1.environment]
+  NODE_ENV = "production" # Устанавливаем NODE_ENV в production для других окружений, если нужно
+
+# Дополнительные настройки могут быть добавлены согласно вашим требованиям
