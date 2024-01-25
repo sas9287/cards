@@ -13,10 +13,10 @@
 #   to = "/root/:splat"
 #   status = 200
 
-[context.production.environment]
-  NODE_ENV = "production" # Устанавливаем NODE_ENV в production для окружения production
+# [context.production.environment]
+#   NODE_ENV = "production" # Устанавливаем NODE_ENV в production для окружения production
 
-[context.split1.environment]
-  NODE_ENV = "production" # Устанавливаем NODE_ENV в production для других окружений, если нужно
+# [context.split1.environment]
+#   NODE_ENV = "production" # Устанавливаем NODE_ENV в production для других окружений, если нужно
 
 # Дополнительные настройки могут быть добавлены согласно вашим требованиям
