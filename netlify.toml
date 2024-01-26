@@ -5,8 +5,8 @@
 # #   # Настроим команды сборки (если они нужны)
 #   command = "npm run build" # Замените на вашу команду сборки, если необходимо
 
-[build.environment]
-  TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
+# [build.environment]
+#   TELEGRAM_BOT_TOKEN = "6774167185:AAFfpIXcx2zdDkjQocnsdwTTWPHsnCm0jBE" # Установите переменную среды TELEGRAM_BOT_TOKEN
 
 [[redirects]] # Настройка перенаправления, если нужно
   from = "/*"
